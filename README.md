@@ -11,6 +11,15 @@ Update student information
 Delete student records
 
 
+PREREQUISITES:
+Make sure you the following have been installed:
+Python (version 3.6 or above)
+Flask 
+WAMP Server
+MySQL (comes with WAMP)
+phpMyAdmin (comes with WAMP)
+
+
 HOW TO RUN THIS PROJECT:
 
 Step 1: Clone the Project
@@ -25,6 +34,16 @@ http://localhost/phpmyadmin/
 Step 3: Set Up MySQL Database
 In phpMyAdmin,I have created a new database named:"task1" and
 Inside that database, I have created a table named:"A1"
+"""
+CREATE DATABASE task1;
+CREATE TABLE A1 (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  phone VARCHAR(15)
+);
+"""
+
 
 Step 4: Create Virtual Environment
 python -m venv venv
